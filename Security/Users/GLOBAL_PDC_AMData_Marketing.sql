@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'GLOBAL\PDC_AMData_Marketing')
+CREATE LOGIN [GLOBAL\PDC_AMData_Marketing] FROM WINDOWS
+GO
+CREATE USER [GLOBAL\PDC_AMData_Marketing] FOR LOGIN [GLOBAL\PDC_AMData_Marketing]
+GO
+GRANT SELECT TO [GLOBAL\PDC_AMData_Marketing]

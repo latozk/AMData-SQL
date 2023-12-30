@@ -1,0 +1,29 @@
+CREATE TABLE [dbo].[dwn_pdc_PQ_Vendor_Part]
+(
+[PQ1VNDRFDS] [varchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1DATE1] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1SETUPID] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1DATE2] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1MAINTID] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1RVSN] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1LDTM] [float] NOT NULL,
+[PQ1PKGQTY] [float] NOT NULL,
+[PQ1UNTMSCD] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1PRMVNDT] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1DATE3] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1RFEANO] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1DATE4] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1DATE5] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1CNTRQTY] [float] NOT NULL,
+[PQ1CNTORDQ] [float] NOT NULL,
+[PQ1CNTORDC] [float] NOT NULL,
+[PQ1PRCNT] [float] NOT NULL,
+[PQ1CNTRCT] [varchar] (8) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1PLNTCD] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1VNDCD] [varchar] (6) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ1VNDRFN] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ6CNTRTYP] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ6DATE6] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PQ6DATE7] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO

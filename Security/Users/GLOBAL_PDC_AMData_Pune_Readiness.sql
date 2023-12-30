@@ -1,0 +1,9 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'GLOBAL\PDC_AMData_Pune_Readiness')
+CREATE LOGIN [GLOBAL\PDC_AMData_Pune_Readiness] FROM WINDOWS
+GO
+CREATE USER [GLOBAL\PDC_AMData_Pune_Readiness] FOR LOGIN [GLOBAL\PDC_AMData_Pune_Readiness]
+GO
+GRANT EXECUTE TO [GLOBAL\PDC_AMData_Pune_Readiness]
+GRANT INSERT TO [GLOBAL\PDC_AMData_Pune_Readiness]
+GRANT SELECT TO [GLOBAL\PDC_AMData_Pune_Readiness]
+GRANT UPDATE TO [GLOBAL\PDC_AMData_Pune_Readiness]

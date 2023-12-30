@@ -1,0 +1,9 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'GLOBAL\apyoulha')
+CREATE LOGIN [GLOBAL\apyoulha] FROM WINDOWS
+GO
+CREATE USER [GLOBAL\apyoulha] FOR LOGIN [GLOBAL\apyoulha]
+GO
+GRANT EXECUTE TO [GLOBAL\apyoulha]
+GRANT REFERENCES TO [GLOBAL\apyoulha]
+GRANT SHOWPLAN TO [GLOBAL\apyoulha]
+GRANT UPDATE TO [GLOBAL\apyoulha]

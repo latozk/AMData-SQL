@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[ref_PDC_SPN_TRD_Exceptions]
+(
+[SPN] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[ref_PDC_SPN_TRD_Exceptions] ADD CONSTRAINT [PK_ref_PDC_SPN_TRD_Exceptions] PRIMARY KEY CLUSTERED ([SPN]) ON [PRIMARY]
+GO

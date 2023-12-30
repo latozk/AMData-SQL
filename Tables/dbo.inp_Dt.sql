@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[inp_Dt]
+(
+[Dt] [date] NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[inp_Dt] ADD CONSTRAINT [PK_inp_Picklist_Dt] PRIMARY KEY CLUSTERED ([Dt]) ON [PRIMARY]
+GO

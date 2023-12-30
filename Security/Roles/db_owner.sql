@@ -1,0 +1,16 @@
+ALTER ROLE [db_owner] ADD MEMBER [GLOBAL\AP PDC Users]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [GLOBAL\apcsexto]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [GLOBAL\apklatoz]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [GLOBAL\aprnewel]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [NMHGEXT\APCSEXTO]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [PDC_Extract]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [PDC_SQL_Admin]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [sqluser]
+GO

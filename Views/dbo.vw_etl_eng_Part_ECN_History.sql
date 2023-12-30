@@ -1,0 +1,18 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [dbo].[vw_etl_eng_Part_ECN_History] AS
+SELECT 
+  PE.CQB9CD AS PN,
+  PE.CQABCD AS ECN,
+  PE.CQBJDT AS Rel_Date,
+  PE.CQDSNB AS Rev,
+  PE.CQIGDT AS Eff_Date,
+  PE.CQEZST AS Status,
+  RC1.TheDate AS Rel_Dt,
+  RC2.TheDate AS Eff_Dt
+FROM dwn_eng_Part_ECN_History PE
+JOIN ref_Calendar RC1 ON RC1.CYYMMDD = PE.CQBJDT
+JOIN ref_Calendar RC2 ON RC2.CYYMMDD = PE.CQIGDT
+GO

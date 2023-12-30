@@ -1,0 +1,42 @@
+CREATE TABLE [dbo].[ref_PDC_Americas_Units_1st_Installation]
+(
+[Unit_Serial_Number] [nvarchar] (12) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Series] [nvarchar] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Install_Date] [datetime2] NULL,
+[Install_Type] [nvarchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Company_Designator] [nvarchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Marketing_Group] [nvarchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Truck_Class] [nvarchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Series_Code] [nvarchar] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Model] [nvarchar] (16) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Std_Wty_Opt_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Std_Wty_Unit_Exp_Date] [datetime2] NULL,
+[Ext_Wty_Opt_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Ext_Wty_Unit_Exp_Date] [datetime2] NULL,
+[Ext_Wty_Sale_Amt_Resv] [money] NULL,
+[Clear_to_Ship_Date] [datetime2] NULL,
+[Ship_Date] [datetime2] NULL,
+[Customer_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer_Name] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer_Address_Line_1] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer_City] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer_State] [nvarchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer_Zip_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer_SIC_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Dealer_Code] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Dealer_Name] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Dealer_Address_Line_1] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Dealer_City] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Dealer_State] [nvarchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Dealer_Zip_Code] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Record_Change_Date] [datetime2] NULL,
+[Order_Number] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Work_Unit_Number] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Business_Unit_Info] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Source] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Report_Dates] [nchar] (35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Append_Date] [datetime2] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[ref_PDC_Americas_Units_1st_Installation] ADD CONSTRAINT [PK_ref_PDC_Americas_Units_1st_Installation_1] PRIMARY KEY CLUSTERED ([Unit_Serial_Number]) ON [PRIMARY]
+GO

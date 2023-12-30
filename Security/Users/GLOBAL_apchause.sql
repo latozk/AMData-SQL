@@ -1,0 +1,9 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'GLOBAL\apchause')
+CREATE LOGIN [GLOBAL\apchause] FROM WINDOWS
+GO
+CREATE USER [GLOBAL\apchause] FOR LOGIN [GLOBAL\apchause]
+GO
+GRANT DELETE TO [GLOBAL\apchause]
+GRANT INSERT TO [GLOBAL\apchause]
+GRANT SELECT TO [GLOBAL\apchause]
+GRANT UPDATE TO [GLOBAL\apchause]

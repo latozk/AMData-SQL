@@ -1,0 +1,19 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+
+CREATE VIEW [dbo].[eng_ECN_Note_Concat_CO_pl] as 
+
+
+SELECT DISTINCT T2.ECN
+      ,Note=STUFF((SELECT ',' + Note
+  FROM dbo.eng_ECN_Note T1
+  WHERE T1.ECN=T2.ECN
+  ORDER BY ECN, Seq
+  FOR XML PATH('')),1,1,'')
+FROM dbo.eng_ECN_Note T2 JOIN inp_Picklist_CO P ON T2.ECN=P.ECN
+GO

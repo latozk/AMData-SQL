@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[wrk_RYOS_PDC_Tooling]
+(
+[PN] [varchar] (12) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[wrk_RYOS_PDC_Tooling] ADD CONSTRAINT [PK_ryos_tooling_tmp] PRIMARY KEY CLUSTERED ([PN]) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [NonClusteredIndex-20220224-203725] ON [dbo].[wrk_RYOS_PDC_Tooling] ([PN]) ON [PRIMARY]
+GO
